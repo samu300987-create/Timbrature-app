@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.sam.timbrature">
+<application android:label="Timbrature" android:icon="@mipmap/ic_launcher">
+<activity android:name=".MainActivity" android:exported="true">
+<intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+</activity>
+<receiver android:name=".alarm.AlarmReceiver" android:exported="true"/>
+<receiver android:name=".alarm.BootReceiver" android:exported="true"/>
+<receiver android:name=".widget.TimbratureWidgetProvider" android:exported="true"/>
+</application>
+</manifest>
